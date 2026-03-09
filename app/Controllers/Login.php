@@ -1,11 +1,19 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\LoginModel;
 
 class Login extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        return view('welcome_message');
+        return view('auth/login');
+    }
+
+    public function register()
+    {
+        return view('auth/register');
     }
 }
+
+
